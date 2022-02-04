@@ -18,9 +18,11 @@ const NavigateCard = () => {
 
   return (
     <SafeAreaView style={tw`bg-white flex-1`}>
-      <Text style={tw`text-center py-3`}>Good morning, Sonny</Text>
+      <Text style={tw`text-center py-3 text-base font-semibold`}>
+        Good morning, Sonny
+      </Text>
       <View style={tw`border-t border-gray-200 flex-shrink`}>
-        <TextInput style={styles.input} placeholder="useless placeholder" />
+        <TextInput style={styles.input} placeholder="Enter adress..." />
         <NavFavorites />
       </View>
 
@@ -54,9 +56,10 @@ export default NavigateCard
 
 const styles = StyleSheet.create({
   input: {
-    height: 40,
-    margin: 12,
-    borderWidth: 1,
+    height: 50,
+    marginHorizontal: 10,
+    // borderWidth: 1,
     padding: 10,
+    fontSize: 18,
   },
 })
